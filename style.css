@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    text-align: center;
+    height: 80vh;
+    width: 80vw;
+    border: 2px dotted grey;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.input-text{
+    padding: 10px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+#check-btn{
+    width: 15%;
+    margin: 10px;
+    padding: 10px;
+    background: crimson;
+    color: rgb(194, 188, 188);
+    font-size: 14pt;
+    border: none;
+    border-radius: 20px;
+}
+
+#check-btn:hover{
+    background: rgb(161, 4, 35);
+    color: white;
+    cursor: pointer;
+}
+table{
+    width: 80%;
+    margin: auto;
+
+}
+table > caption{
+    margin: 10px;
+}
+table, th, td, tr{
+    border: 2px solid green;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.error{
+    color: red;
+}
