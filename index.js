@@ -1,17 +1,17 @@
 const checkBtn = document.getElementById('check-btn');
-const errorfield = document.querySelector('.error');
-const notefield = document.querySelector('#note-field');
+const errorField = document.querySelector('.error');
+const noteField = document.querySelector('#note-field');
 const notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]
 
 
 //showing error to error box
 const showError = (message) => {
-    errorfield.innerHTML = message
+    errorField.innerHTML = message
 }
 
 const printNumberOfNotes = (numOfNotes) => {
     
-        notefield.innerHTML += `<td> ${numOfNotes} </td>`;
+        noteField.innerHTML += `<td> ${numOfNotes} </td>`;
 }
 
 //calculating the number of notes
@@ -32,14 +32,14 @@ const calculateNotes = (amount) => {
 }
 
 //Validating the bill amounts
-const validateAmounts = () => {
+const validateAmount = () => {
     const billAmount = parseInt(document.querySelector('#bill-amount').value);
     const cashGiven = parseInt(document.getElementById('cash-given').value);
 
     if(billAmount > 0){
         if(cashGiven >= billAmount){
             showError('');
-            notefield.innerHTML = '<th>No. of notes</th>';
+            noteField.innerHTML = '<th>No. of notes</th>';
             calculateNotes(cashGiven - billAmount)
         }
         else{
@@ -51,6 +51,6 @@ const validateAmounts = () => {
     }
 }
 
-checkBtn.addEventListener('click', validateAmounts)
+checkBtn.addEventListener('click', validateAmount)
 
-// notefield.innerHTML = '<th>No. of notes</th>';
+// noteField.innerHTML = '<th>No. of notes</th>';
