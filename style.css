@@ -6,11 +6,11 @@
 .container{
     padding: 10px;
     text-align: center;
-    height: 80vh;
-    width: 80vw;
-    border: 2px dotted grey;
+    min-height: 80vh;
+    width: 60vw;
     margin: auto;
     margin-top: 50px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .input-text{
@@ -53,3 +53,30 @@ table, th, td, tr{
 .error{
     color: red;
 }
+
+/* mdedia query for phone */
+@media only screen and (max-width: 600px) {
+    .container{
+        padding: 5px;
+        width: 90%;
+        margin-top: 40px;
+    }
+    #check-btn{
+        width: 50%;
+        margin: 20px;
+        padding: 10px;
+        font-weight: 500;
+    }
+    table{
+        font-size: 8pt;
+    
+    }
+    table > caption{
+        margin: 10px;
+    }
+    table, th, td, tr{
+        border: 2px solid green;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+} 
